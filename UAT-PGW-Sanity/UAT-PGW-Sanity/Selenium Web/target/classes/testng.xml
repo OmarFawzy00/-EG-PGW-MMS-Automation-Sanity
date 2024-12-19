@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Suite" parallel="tests" thread-count="2">
+    <test name="MMS">
+        <classes>
+            <class name="DriverManager.DriverMMS"/>
+        </classes>
+    </test>
+
+    <test name="GSDK">
+        <classes>
+            <class name="DriverManager.DriverGSDK"/>
+        </classes>
+    </test>
+
+    <test name="outlook">
+        <classes>
+            <class name="DriverManager.DriverOutlook"/>
+        </classes>
+    </test>
+
+    <test name="callbackURL">
+        <classes>
+            <class name="DriverManager.DriverCallbackURL"/>
+        </classes>
+    </test>
+</suite>
